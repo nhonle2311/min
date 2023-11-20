@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        const isPrimeNumber = (isPrime) => {
+            if (isPrime < 2)  return false;
+            for (let i = 2; i <= Math.sqrt(isPrime) ; i++) {
+                if (isPrime % 2 === 0) {
+                    return false
+                }
+            }
+            return true;
+        }
+        const sumPrimeNumber = (arrayPrimeNumber) => {
+            let sumNumber = 0;
+            for (let i = 2; i < arrayPrimeNumber ; i++) {
+                if (isPrimeNumber(arrayPrimeNumber[i])){
+                    sumNumber += i;
+                }
+            }
+            return sumNumber;
+        }
+        let inputArrayPrimeNumber = 500;
+        let sumPrime = sumPrimeNumber(inputArrayPrimeNumber);
+        document.write(`${sumPrime}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        const countEvenNumber = (array) => {
+          let countNumber = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] % 2 === 0){
+                    countNumber++;
+                }
+            }
+            return countNumber;
+        }
+        let inputIntegerNumber = prompt('nhập dãy số của bạn cách nhau bằng dấu ,');
+        let countEvent = countEvenNumber(inputIntegerNumber);
+        document.write(`có: (${countEvent}) số chẵn trong mảng`);
+    </script>
+</body>
+</html>

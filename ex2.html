@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <label for="inputElement">Nhập Mảng</label>
+    <input type="text" id="inputElement" value=""/>
+    <button type="button" onclick="countElement()">CountElement</button>
+<body>
+    <script>
+        function countElement() {
+            let inputElement = document.getElementById('inputElement').value;
+            let countInputElement = inputElement.length;
+            document.write(`tổng số phần tử là: ${countInputElement}`);
+        }
+
+
+    </script>
+</body>
+</html>
