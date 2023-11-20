@@ -11,7 +11,8 @@
     <script>
         function countElement() {
             let inputElement = document.getElementById('inputElement').value;
-            let countInputElement = inputElement.length;
+            let covertInputArray = inputElement.split(",")
+            let countInputElement = covertInputArray.length;
             document.write(`tổng số phần tử là: ${countInputElement}`);
         }
 
